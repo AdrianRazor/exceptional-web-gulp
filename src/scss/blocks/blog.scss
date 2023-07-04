@@ -1,0 +1,53 @@
+.blog {
+  margin-top: 90px;
+  margin-bottom: 150px;
+  background-color: $white;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & p {
+      font-weight: 600;
+      font-size: 16px;
+      color: $dark-grey;
+    }
+  }
+
+  &__btn-clear {
+    font-size: 14px;
+    color: $dark-green3;
+
+    transition: 0.2s ease;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $dark-green1;
+      }
+    }
+  }
+
+  &__filters {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__pagination {
+    margin-top: 40px;
+  }
+}

@@ -12,5 +12,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Clear filters
+  const clearBtn = document.querySelector(".blog__btn-clear");
+  const checkboxes = document.querySelectorAll(".checkbox input");
+  if (clearBtn && checkboxes) {
+    clearBtn.addEventListener("click", () => {
+      checkboxes.forEach((el) => {
+        el.checked = false;
+      });
+    });
+  }
+
   console.log("DOM fully loaded and parsed");
 });

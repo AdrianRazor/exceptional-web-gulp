@@ -1,0 +1,15 @@
+.pagination {
+  &__btn {
+    & .prev {
+    }
+    & .next {
+    }
+  }
+  &__list {
+  }
+
+  &__item {
+    &--dots {
+    }
+  }
+}
