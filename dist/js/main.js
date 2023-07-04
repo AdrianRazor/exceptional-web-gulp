@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(e){const t=document.documentElement,o=document.querySelector(".header"),n=document.querySelector(".burger");o&&n&&n.addEventListener("click",()=>{t.classList.toggle("block"),o.classList.toggle("open"),n.classList.toggle("open")}),console.log("DOM fully loaded and parsed")});

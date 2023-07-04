@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__item {
+    padding: 10px 0;
+
+    font-size: 15px;
+    line-height: 135%;
+    color: $dark-grey;
+
+    transition: 0.2s ease;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $teal;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav {
+    flex-direction: column;
+    align-items: initial;
+    gap: 10px;
+
+    &__item {
+      font-size: 20px;
+    }
+  }
+}
