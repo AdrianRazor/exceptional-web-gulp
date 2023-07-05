@@ -5,8 +5,16 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 260px 1fr;
     gap: 20px;
+  }
+
+  &__aside {
+    height: fit-content;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid $light-grey;
+    background-color: $white;
   }
 
   &__head {
@@ -44,10 +52,23 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px 20px;
   }
 
   &__pagination {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 999px) {
+  .blog {
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+    &__wrapper {
+      grid-template-columns: initial;
+      gap: 40px;
+    }
   }
 }
