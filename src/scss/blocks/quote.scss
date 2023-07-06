@@ -1,0 +1,133 @@
+.quote {
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+
+    padding: 65px 90px;
+    border-radius: 12px;
+    background-color: $dark-green;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 70px;
+
+    & p {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 150%;
+      color: $white;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 74px;
+      height: 88px;
+      border: 1px solid $teal;
+      border-radius: 99px;
+      opacity: 0.6;
+
+      position: absolute;
+      bottom: -30px;
+      left: 12px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 110px;
+      height: 130px;
+      border: 1px solid $teal;
+      border-radius: 99px;
+      opacity: 0.9;
+
+      position: absolute;
+      bottom: -96px;
+      right: 28px;
+    }
+
+    & > span {
+      display: block;
+      width: 170px;
+      height: 200px;
+      border: 1px solid $teal;
+      border-radius: 99px;
+      opacity: 0.2;
+
+      position: absolute;
+      bottom: -88px;
+      right: -113px;
+    }
+  }
+
+  &__block {
+    & span {
+      display: inline-block;
+      font-size: 150px;
+      line-height: 77%;
+      height: 56px;
+      letter-spacing: -10px;
+      color: $teal;
+    }
+
+    & h4 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+      color: $white;
+
+      &::before {
+        content: "\275E";
+        display: block;
+        margin-bottom: 20px;
+
+        font-weight: 300;
+        font-size: 150px;
+        line-height: 80%;
+        height: 60px;
+        letter-spacing: -10px;
+        color: $teal;
+      }
+    }
+
+    & p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .quote {
+    &__wrapper {
+      padding: 40px 20px;
+      grid-template-columns: initial;
+      gap: 30px;
+
+      & p {
+        text-align: center;
+        opacity: 0.9;
+      }
+
+      &::before,
+      &::after,
+      & > span {
+        display: none;
+      }
+    }
+
+    &__block {
+      & h4 {
+        text-align: center;
+
+        &::before {
+          margin-bottom: 10px;
+        }
+      }
+
+      & p {
+        opacity: 0.6;
+      }
+    }
+  }
+}
