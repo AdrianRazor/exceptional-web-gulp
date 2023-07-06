@@ -1,0 +1,197 @@
+.programs {
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+  &__title {
+    max-width: 600px;
+  }
+
+  &__subtitle {
+    max-width: 745px;
+    margin: 16px auto 0;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: $grey;
+    text-align: center;
+  }
+
+  &__slider {
+    margin-top: 30px;
+
+    & .splide {
+      &__track {
+        padding-top: 50px;
+        padding-bottom: 40px;
+      }
+
+      &__slide {
+        &.is-active {
+          & .block {
+            background-color: $teal4;
+
+            &__circle {
+              border-color: $teal4;
+              background-color: #b4e9e4;
+            }
+          }
+        }
+      }
+
+      &__arrow {
+        width: 50px;
+        height: 50px;
+        background-color: $white;
+
+        & svg {
+          width: 40px;
+          height: 40px;
+          fill: $dark-grey;
+        }
+
+        &--prev {
+          left: -25px;
+          box-shadow: 6px 6px 6px 0 rgba(64, 64, 64, 0.2);
+        }
+
+        &--next {
+          right: -25px;
+          box-shadow: -6px 6px 6px 0 rgba(64, 64, 64, 0.2);
+        }
+      }
+
+      &__progress {
+        display: none;
+      }
+    }
+  }
+
+  &__desc {
+    max-width: 745px;
+    margin: 0 auto;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 150%;
+    color: $dark-green;
+    text-align: center;
+  }
+
+  &__btn {
+    max-width: 210px;
+    margin: 24px auto 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .programs {
+    & .splide {
+      &__slide {
+        opacity: 0.5;
+        transition: 0.3s ease;
+
+        &.is-active {
+          opacity: 1;
+        }
+      }
+
+      &__arrow {
+        &--prev {
+          left: -10px;
+        }
+
+        &--next {
+          right: -10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .programs {
+    & .splide {
+      &__slide {
+        opacity: 0.5;
+        transition: 0.3s ease;
+
+        &.is-active {
+          opacity: 1;
+
+          & .block {
+            background-color: $light-grey;
+
+            &__circle {
+              border-color: $light-grey;
+              background-color: $white;
+            }
+          }
+        }
+      }
+
+      &__arrows {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 25px;
+      }
+
+      &__arrow {
+        position: static;
+        width: 36px;
+        height: 36px;
+
+        background-color: $teal4;
+        box-shadow: initial;
+        opacity: 1;
+        transform: initial;
+
+        & svg {
+          fill: $teal;
+        }
+
+        &--prev {
+          left: -10px;
+        }
+
+        &--next {
+          right: -10px;
+        }
+
+        &:disabled {
+          opacity: 0.3;
+        }
+      }
+
+      &__progress {
+        display: block;
+        width: 60%;
+        height: 4px;
+        background-color: rgba(64, 64, 64, 0.1);
+        border-radius: 99px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &-bar {
+          width: 0;
+          height: 4px;
+          background-color: $teal;
+          border-radius: 99px;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          transition: width 0.3s ease;
+        }
+      }
+    }
+  }
+}

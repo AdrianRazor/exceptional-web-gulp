@@ -1,0 +1,19 @@
+.title {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 130%;
+  color: $dark-green;
+  text-align: center;
+
+  margin: 0 auto;
+
+  &--white {
+    color: $white;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 24px;
+  }
+}
