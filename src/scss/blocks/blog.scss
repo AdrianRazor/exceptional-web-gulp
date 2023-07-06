@@ -68,7 +68,41 @@
 
     &__wrapper {
       grid-template-columns: initial;
-      gap: 40px;
+      gap: 20px;
+    }
+
+    &__head {
+      & p {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &::after {
+          content: "";
+          display: block;
+
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 4px 4px 0 4px;
+          border-color: $dark-grey transparent transparent transparent;
+
+          transition: 0.2s ease;
+        }
+      }
+    }
+
+    &__filters {
+      max-height: 0;
+      margin-top: 0;
+      overflow: hidden;
+
+      transition: 0.2s ease;
+
+      &.open {
+        max-height: 500px;
+        margin-top: 20px;
+      }
     }
   }
 }

@@ -1,24 +1,147 @@
 .footer {
-  &__wrapper {
-  }
+  background-color: $light-grey;
 
   &__head {
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(64, 64, 64, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__btn {
+    max-width: 140px;
+    height: 42px;
   }
 
   &__body {
+    padding: 30px 0 40px;
+
+    display: grid;
+    grid-template-columns: 27% 27% 27% 1fr;
+    gap: 20px;
+
+    & a {
+      font-size: 16px;
+      line-height: 150%;
+      color: $dark-grey;
+    }
   }
 
   &__list {
+    & p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 150%;
+      color: $dark-grey;
+    }
+
+    &--secondary {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__links {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 16px;
+
+    margin-top: 16px;
+    overflow: hidden;
+
+    transition: 0.3s ease;
   }
 
   &__bottom {
+    padding: 20px 0 40px;
+    border-top: 1px solid rgb(64, 64, 64, 0.1);
+
+    & p {
+      font-size: 14px;
+      line-height: 150%;
+      color: $grey;
+      text-align: center;
+    }
   }
 }
 
-// @media (max-width: 767px) {
-//   .footer {
-//   }
-// }
+@media (max-width: 1023px) {
+  .footer {
+    &__body {
+      grid-template-columns: 20% 30% 20% 1fr;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    &__body {
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    &__list {
+      &--primary {
+        grid-column: span 2;
+        padding: 0 20px;
+
+        border-radius: 6px;
+        background-color: rgb(64, 64, 64, 0.03);
+
+        & .footer__links {
+          max-height: 0;
+          margin-top: 0;
+        }
+
+        & p {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          padding: 12px 0;
+          color: $dark-grey;
+
+          transition: 0.2s ease;
+
+          &::after {
+            content: "";
+            display: block;
+
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 4px 0 4px;
+            border-color: $dark-grey transparent transparent transparent;
+
+            transition: 0.2s ease;
+          }
+        }
+
+        &.open {
+          & .footer__links {
+            max-height: 400px;
+            margin-top: 4px;
+            margin-bottom: 12px;
+          }
+
+          & p {
+            color: $teal;
+
+            &::after {
+              border-color: $teal transparent transparent transparent;
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+
+      &--secondary {
+        padding: 0 20px;
+        margin-top: 28px;
+      }
+    }
+  }
+}

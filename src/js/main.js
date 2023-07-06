@@ -12,6 +12,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Open mobile filters
+  const filterBtn = document.querySelector(".blog__head p");
+  const filterBody = document.querySelector(".blog__filters");
+  if (filterBtn && filterBody) {
+    filterBtn.addEventListener("click", () => {
+      filterBody.classList.toggle("open");
+    });
+  }
   // Clear filters
   const clearBtn = document.querySelector(".blog__btn-clear");
   const checkboxes = document.querySelectorAll(".checkbox input");
@@ -20,6 +28,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
       checkboxes.forEach((el) => {
         el.checked = false;
       });
+      filterBody.classList.remove("open");
+    });
+  }
+
+  // Footer dropdown
+  const footerDrop = document.querySelectorAll(".footer__list--primary");
+  if (footerDrop) {
+    footerDrop.forEach((drop) => {
+      const footerDropBtn = drop.querySelector("p");
+
+      if (footerDropBtn) {
+        footerDropBtn.addEventListener("click", () => {
+          drop.classList.toggle("open");
+        });
+      }
     });
   }
 
