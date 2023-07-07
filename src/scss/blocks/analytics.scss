@@ -1,0 +1,122 @@
+.analytics {
+  position: relative;
+  margin-bottom: 90px;
+  padding: 130px 0;
+  background-color: $dark-green;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 210px;
+
+    background-image: url("../img/waves-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+
+    position: absolute;
+    top: 25%;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 330px;
+
+    background-image: url("../img/waves-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 42% 1fr;
+    gap: 6%;
+  }
+
+  &__img {
+    height: initial;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &__rating {
+    & span {
+      color: $grey;
+    }
+  }
+
+  & p {
+    max-width: 515px;
+    margin-top: 20px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: $white;
+  }
+
+  &__btn {
+    max-width: 300px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .analytics {
+    margin-bottom: 70px;
+    padding: 40px 0;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      width: 200%;
+      height: 100%;
+      opacity: 0.1;
+    }
+
+    &__wrapper {
+      grid-template-columns: initial;
+      gap: 40px;
+
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    &__img {
+      order: 1;
+    }
+
+    &__title {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+
+    & p {
+      margin-top: 16px;
+      font-size: 16px;
+    }
+
+    &__btn {
+      max-width: 330px;
+    }
+  }
+}

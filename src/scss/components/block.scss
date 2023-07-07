@@ -58,17 +58,10 @@
   }
 
   &__rating {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
     margin-bottom: 18px;
 
     & span {
-      font-size: 14px;
-      line-height: 140%;
       color: $white;
-      text-align: center;
       opacity: 0.5;
     }
   }

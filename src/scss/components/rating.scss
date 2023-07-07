@@ -1,0 +1,11 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  & span {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+  }
+}
