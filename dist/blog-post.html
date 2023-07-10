@@ -63,8 +63,8 @@
       </section>
 
       <section class="post">
-        <div class="container">
-          <div class="post__wrapper">
+        <div class="post__wrapper">
+          <div class="post__body">
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item">
                 <a href="#">Home</a>
@@ -79,9 +79,133 @@
                 <a href="#">Article Title</a>
               </li>
             </ul>
-            <div class="post__body"></div>
-            <aside class="post__aside"></aside>
+            <div class="post-content post__content"></div>
           </div>
+          <aside class="post__aside">
+            <div class="post__about">
+              <h4>
+                Danielle Williams
+                <br />
+                Lead Project Manager
+              </h4>
+              <div class="post__avatar">
+                <img src="img/avatar.jpg" alt="avatar" />
+              </div>
+              <p>
+                Enim, aliquam feugiat sagittis habitasse platea id varius
+                vulputate sit. Ante morbi felis, auctor integer. Rutrum aliquet
+                eleifend etiam vel sed.
+              </p>
+              <a href="#">More about Danielle</a>
+              <div class="post__socials">
+                <a href="https://en.linkedin.com/">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.4099 0H2.58758C2.14877 0.00317828 1.7291 0.180169 1.42055 0.492194C1.11199 0.80422 0.939694 1.22583 0.941419 1.66466V21.4556C0.939694 21.8944 1.11199 22.316 1.42055 22.628C1.7291 22.9401 2.14877 23.1171 2.58758 23.1202H22.4099C22.8492 23.1168 23.2693 22.9399 23.5787 22.6281C23.8881 22.3163 24.0617 21.8948 24.0617 21.4556V1.66466C24.0617 1.2254 23.8881 0.803934 23.5787 0.49212C23.2693 0.180306 22.8492 0.00341647 22.4099 0ZM7.92928 19.8177H4.50194V8.78569H7.9339V19.8177H7.92928ZM6.21283 7.2764C5.8201 7.27567 5.4364 7.15854 5.11021 6.93982C4.78402 6.7211 4.52998 6.4106 4.38019 6.04755C4.23041 5.6845 4.1916 5.2852 4.26866 4.9001C4.34573 4.51501 4.53522 4.16139 4.81318 3.88395C5.09114 3.6065 5.44511 3.41767 5.83035 3.34132C6.21559 3.26497 6.61481 3.30453 6.97758 3.45499C7.34035 3.60545 7.65038 3.86006 7.86849 4.18666C8.08661 4.51326 8.20302 4.89718 8.20302 5.28991C8.20302 5.55109 8.15152 5.80971 8.05146 6.05097C7.9514 6.29222 7.80474 6.51137 7.61989 6.69588C7.43503 6.88039 7.21561 7.02664 6.97417 7.12625C6.73273 7.22587 6.47401 7.27689 6.21283 7.2764V7.2764ZM20.7712 19.8168H17.3494V14.4529C17.3494 13.173 17.3235 11.5268 15.5691 11.5268C13.7833 11.5268 13.5096 12.9205 13.5096 14.3604V19.8168H10.0878V8.78569H13.3755V10.2922H13.4217C13.7505 9.72983 14.2255 9.26702 14.7963 8.95292C15.367 8.63881 16.0121 8.48515 16.6632 8.50825C20.1312 8.50825 20.7767 10.7944 20.7767 13.7667L20.7712 19.8168Z"
+                    />
+                  </svg>
+                </a>
+                <a href="https://twitter.com/">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.0625 4.54923C23.1826 4.94237 22.2279 5.20446 21.2357 5.32614C22.2559 4.71772 23.0329 3.7536 23.3979 2.60228C22.4432 3.1639 21.3948 3.57576 20.2715 3.8004C19.373 2.84565 18.0906 2.24658 16.6772 2.24658C13.9627 2.24658 11.7536 4.45563 11.7536 7.17014C11.7536 7.55391 11.791 7.92833 11.8847 8.29338C7.79417 8.08746 4.16234 6.13114 1.73801 3.14518C1.31679 3.87529 1.07342 4.71772 1.07342 5.62568C1.07342 7.32927 1.94393 8.83628 3.26375 9.72552C2.45876 9.69744 1.70056 9.47279 1.03598 9.10773V9.1639C1.03598 11.5508 2.73021 13.5446 4.98606 13.9939C4.5742 14.1062 4.13426 14.1717 3.68496 14.1717C3.36671 14.1717 3.05782 14.1436 2.75829 14.0875C3.38543 16.0438 5.20135 17.4665 7.35423 17.504C5.66936 18.8238 3.54456 19.6101 1.24191 19.6101C0.848772 19.6101 0.455636 19.5914 0.0625 19.5446C2.24347 20.9392 4.82693 21.7536 7.60696 21.7536C16.6678 21.7536 21.6194 14.2466 21.6194 7.74112C21.6194 7.52583 21.6194 7.31054 21.6101 7.10462C22.5742 6.40259 23.4073 5.54143 24.0625 4.54923Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="post__recent">
+              <h4>Recent Articles</h4>
+              <div class="post__recent-list">
+                <a href="#">
+                  <div class="post__recent-img">
+                    <img src="img/card-2.jpg" alt="article" />
+                  </div>
+                  <div class="post__recent-box">
+                    <h5>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ullam minus, eos, dolores illum obcaecati praesentium
+                      natus vel fuga dicta accusamus enim ipsa! Dolorem rerum
+                      cupiditate minima commodi suscipit nemo maiores. Unde
+                      commodi odit corrupti cumque maiores mollitia omnis
+                      sapiente labore ut ipsa adipisci qui rem ab dignissimos
+                      accusantium, nam amet culpa a distinctio perspiciatis
+                      reiciendis quasi? Delectus, alias! Maiores, culpa?
+                    </h5>
+                  </div>
+                  <p>April 16, 2022</p>
+                </a>
+                <a href="#">
+                  <div class="post__recent-img">
+                    <img src="img/card-2.jpg" alt="article" />
+                  </div>
+                  <div class="post__recent-box">
+                    <h5>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ullam minus, eos, dolores illum obcaecati praesentium
+                      natus vel fuga dicta accusamus enim ipsa! Dolorem rerum
+                      cupiditate minima commodi suscipit nemo maiores. Unde
+                      commodi odit corrupti cumque maiores mollitia omnis
+                      sapiente labore ut ipsa adipisci qui rem ab dignissimos
+                      accusantium, nam amet culpa a distinctio perspiciatis
+                      reiciendis quasi? Delectus, alias! Maiores, culpa?
+                    </h5>
+                  </div>
+                  <p>April 16, 2022</p>
+                </a>
+                <a href="#">
+                  <div class="post__recent-img">
+                    <img src="img/card-2.jpg" alt="article" />
+                  </div>
+                  <div class="post__recent-box">
+                    <h5>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ullam minus, eos, dolores illum obcaecati praesentium
+                      natus vel fuga dicta accusamus enim ipsa! Dolorem rerum
+                      cupiditate minima commodi suscipit nemo maiores. Unde
+                      commodi odit corrupti cumque maiores mollitia omnis
+                      sapiente labore ut ipsa adipisci qui rem ab dignissimos
+                      accusantium, nam amet culpa a distinctio perspiciatis
+                      reiciendis quasi? Delectus, alias! Maiores, culpa?
+                    </h5>
+                  </div>
+                  <p>April 16, 2022</p>
+                </a>
+              </div>
+            </div>
+            <div class="post__related">
+              <h4>Related Outcomes</h4>
+              <div class="post__related-list">
+                <a href="#">Id euismod mattis ac a.</a>
+                <a href="#">Vehicula luctus velit tortor magnis quam.</a>
+                <a href="#"
+                  >Vehicula luctus velit tortor magnis quam ultrices tellus arcu
+                  eget.</a
+                >
+              </div>
+            </div>
+            <div class="post__strategy">
+              <div class="post__strategy-box">
+                <h3 class="title post__strategy-title">
+                  Free <strong>Step-by-Step Growth Strategy</strong>
+                </h3>
+                <p>One Exceptional Outcome At The Time</p>
+                <a href="#" class="btn post__strategy-btn">
+                  Tell Us About Your Business
+                </a>
+              </div>
+            </div>
+          </aside>
         </div>
       </section>
 
