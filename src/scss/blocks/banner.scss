@@ -10,7 +10,8 @@
     justify-content: center;
     gap: 20px;
 
-    & h1 {
+    & h1,
+    & h2 {
       font-weight: 600;
       font-size: 44px;
       line-height: 120%;
@@ -71,7 +72,8 @@
 @media (max-width: 1023px) {
   .banner {
     &__wrapper {
-      & h1 {
+      & h1,
+      & h2 {
         font-size: 26px;
       }
 
