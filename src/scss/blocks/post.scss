@@ -234,6 +234,10 @@
       grid-template-columns: initial;
     }
 
+    &__body {
+      padding: 30px 20px;
+    }
+
     &__aside {
       padding: 50px 30px;
     }
@@ -246,6 +250,10 @@
     &__related,
     &__strategy {
       display: none;
+    }
+
+    &__content {
+      margin-top: 20px;
     }
   }
 }

@@ -33,6 +33,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Show/hide button
+  const showTableList = document.querySelector("#show-table-list");
+  const contentTableBody = document.querySelector(".article__tbody");
+  if (showTableList && contentTableBody) {
+    showTableList.addEventListener("click", () => {
+      contentTableBody.classList.toggle("open");
+      showTableList.classList.toggle("open");
+    });
+  }
+
   // Footer dropdown
   const footerDrop = document.querySelectorAll(".footer__list--primary");
   if (footerDrop) {

@@ -118,7 +118,10 @@
               <div class="article__table">
                 <div class="article__thead">
                   <p>Table Of Contents</p>
-                  <button id="show-table-list">show</button>
+                  <button id="show-table-list">
+                    <span>show</span>
+                    <span>hide</span>
+                  </button>
                 </div>
                 <div class="article__tbody">
                   <ol>
@@ -380,75 +383,76 @@
                 ></iframe>
               </div>
               <div class="article__recommended">
-                <div class="blog-card">
-                  <a href="#" class="blog-card__img">
-                    <img src="img/card-1.jpg" alt="card" />
-                  </a>
-                  <div class="blog-card__body">
-                    <div class="blog-card__tags">
-                      <a href="#">Development</a>
-                      <a href="#">Google Ads</a>
-                    </div>
-                    <div class="blog-card__author">
-                      <span>Sept 21, 2022</span>
-                      <span>By <a href="#">Danielle Williams</a></span>
-                      <span>12 min read</span>
-                    </div>
-                    <a href="#">
-                      <h2>Semper cum pretium tristique dolor</h2>
+                <h2><strong>Recommended</strong> articles</h2>
+                <div class="article__recommended-box">
+                  <div class="article__card">
+                    <a href="#" class="article__card-img">
+                      <img src="img/card-1.jpg" alt="card" />
                     </a>
-                    <p>
-                      Diam sem scelerisque sed mollis mauris nibh sed. Augue
-                      rhoncus est eget commodo non dui pellentesque.
-                    </p>
+                    <div class="article__card-body">
+                      <div class="article__card-tags">
+                        <a href="#">Development</a>
+                        <a href="#">Google Ads</a>
+                      </div>
+                      <div class="article__card-author">
+                        <span>Sept 21, 2022</span>
+                        <span>By <a href="#">Danielle Williams</a></span>
+                        <span>12 min read</span>
+                      </div>
+                      <a href="#">
+                        <h2>Article Title</h2>
+                      </a>
+                      <p>
+                        Diam sem scelerisque sed mollis mauris nibh sed. Augue
+                        rhoncus est eget commodo non dui pellentesque.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="blog-card">
-                  <a href="#" class="blog-card__img">
-                    <img src="img/card-2.jpg" alt="card" />
-                  </a>
-                  <div class="blog-card__body">
-                    <div class="blog-card__tags">
-                      <a href="#">Tiktok SMM</a>
-                      <a href="#">Facebook Ads</a>
-                    </div>
-                    <div class="blog-card__author">
-                      <span>Jule 05, 2023</span>
-                      <span>By <a href="#">Jason Statham</a></span>
-                      <span>99 min read</span>
-                    </div>
-                    <a href="#">
-                      <h2>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                      </h2>
+                  <div class="article__card">
+                    <a href="#" class="article__card-img">
+                      <img src="img/card-2.jpg" alt="card" />
                     </a>
-                    <p>
-                      Gde by ty ni byl, kem by ty ne stal, pomni, gde ty byl i
-                      kem ty stal
-                    </p>
+                    <div class="article__card-body">
+                      <div class="article__card-tags">
+                        <a href="#">Tiktok SMM</a>
+                        <a href="#">Facebook Ads</a>
+                      </div>
+                      <div class="article__card-author">
+                        <span>Jule 05, 2023</span>
+                        <span>By <a href="#">Jason Statham</a></span>
+                        <span>99 min read</span>
+                      </div>
+                      <a href="#">
+                        <h2>Article Title</h2>
+                      </a>
+                      <p>
+                        Gde by ty ni byl, kem by ty ne stal, pomni, gde ty byl i
+                        kem ty stal
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="blog-card">
-                  <a href="#" class="blog-card__img">
-                    <img src="img/card-1.jpg" alt="card" />
-                  </a>
-                  <div class="blog-card__body">
-                    <div class="blog-card__tags">
-                      <a href="#">Development</a>
-                      <a href="#">Google Ads</a>
-                    </div>
-                    <div class="blog-card__author">
-                      <span>Sept 21, 2022</span>
-                      <span>By <a href="#">Danielle Williams</a></span>
-                      <span>12 min read</span>
-                    </div>
-                    <a href="#">
-                      <h2>Semper cum pretium tristique dolor</h2>
+                  <div class="article__card">
+                    <a href="#" class="article__card-img">
+                      <img src="img/card-1.jpg" alt="card" />
                     </a>
-                    <p>
-                      Diam sem scelerisque sed mollis mauris nibh sed. Augue
-                      rhoncus est eget commodo non dui pellentesque.
-                    </p>
+                    <div class="article__card-body">
+                      <div class="article__card-tags">
+                        <a href="#">Development</a>
+                        <a href="#">Google Ads</a>
+                      </div>
+                      <div class="article__card-author">
+                        <span>Sept 21, 2022</span>
+                        <span>By <a href="#">Danielle Williams</a></span>
+                        <span>12 min read</span>
+                      </div>
+                      <a href="#">
+                        <h2>Article Title</h2>
+                      </a>
+                      <p>
+                        Diam sem scelerisque sed mollis mauris nibh sed. Augue
+                        rhoncus est eget commodo non dui pellentesque.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -486,8 +490,8 @@
               </div>
               <div class="article__reviews">
                 <h3>What do our customers say?</h3>
-                <div class="article__rating">
-                  <div class="block__stars">
+                <div class="article__reviews-rating">
+                  <div class="article__reviews-stars">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -563,8 +567,8 @@
                 </div>
                 <div class="article__reviews-wrapper">
                   <div class="article__reviews-box">
-                    <div class="article__rating">
-                      <div class="block__stars">
+                    <div class="article__reviews-rating">
+                      <div class="article__reviews-stars">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -638,8 +642,8 @@
                       </div>
                       <p>Communications</p>
                     </div>
-                    <div class="article__rating">
-                      <div class="block__stars">
+                    <div class="article__reviews-rating">
+                      <div class="article__reviews-stars">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -713,8 +717,8 @@
                       </div>
                       <p>Professionalism</p>
                     </div>
-                    <div class="article__rating">
-                      <div class="block__stars">
+                    <div class="article__reviews-rating">
+                      <div class="article__reviews-stars">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -788,8 +792,8 @@
                       </div>
                       <p>Met all Deadlines</p>
                     </div>
-                    <div class="article__rating">
-                      <div class="block__stars">
+                    <div class="article__reviews-rating">
+                      <div class="article__reviews-stars">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -863,8 +867,8 @@
                       </div>
                       <p>Tangible Results</p>
                     </div>
-                    <div class="article__rating">
-                      <div class="block__stars">
+                    <div class="article__reviews-rating">
+                      <div class="article__reviews-stars">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -952,8 +956,8 @@
                 </div>
               </div>
               <div class="article__buttons">
-                <a href="#" class="btn">Primary Button</a>
-                <a href="#" class="btn btn--secondary">Secondary Button</a>
+                <a href="#" class="btn btn--secondary">Previous Post</a>
+                <a href="#" class="btn btn--secondary">Next Post</a>
               </div>
             </div>
           </div>
